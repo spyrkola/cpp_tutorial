@@ -2,16 +2,8 @@
 #include <iostream>
 #include <vector>
 
-/// return a vector that is the element-wise addition of left and right
-std::vector<int> sum_vecs(std::vector<int> const &left, std::vector<int> const &right) {
-	int size = left.size();
-	std::vector<int> result(size);
-
-	for (int i = 0; i < size; i++) {
-		result[i] = left[i] + right[i];
-	}
-	return result;
-}
+/// function prototype
+std::vector<int> sum_vecs(std::vector<int> const &left, std::vector<int> const &right);
 
 int main() {
 	std::vector<int> vec1{1, 2, 3, 4, 5};
